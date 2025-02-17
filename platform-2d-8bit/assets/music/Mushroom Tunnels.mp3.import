@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqug5jyrbio20"
+path="res://.godot/imported/Mushroom Tunnels.mp3-b68b44050e1e41feb88180a28bc5e4a7.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Mushroom Tunnels.mp3"
+dest_files=["res://.godot/imported/Mushroom Tunnels.mp3-b68b44050e1e41feb88180a28bc5e4a7.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0w1e3p5u214c"]
+
+[ext_resource type="Script" path="res://scripts/dead_zone.gd" id="1_gk5w1"]
+[ext_resource type="AudioStream" uid="uid://cvnxnbdm67s1l" path="res://assets/sounds/explosion.wav" id="2_22j8e"]
+
+[node name="DeadZone" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_gk5w1")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+
+[node name="DeadSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_22j8e")
+volume_db = -2.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
